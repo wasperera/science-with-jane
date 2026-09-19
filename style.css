@@ -1,0 +1,242 @@
+body {
+    background-color: #f5f7fb;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    margin: 0;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero-text p,
+.hero-text a {
+    font-size: 1.2rem;    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(37, 18, 111);
+    padding: 10px;
+}
+
+.navbar a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.2s;
+    /* margin: 0 10px; */
+    /* padding: 10px; */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    /* margin-right: 20px; */
+    gap: 20px;
+}
+
+.navbar a:hover {
+    color: black;
+    transform: scale(1.1) translateY(-2px);
+}
+
+.brand {
+    color: rgb(58, 193, 76);
+    font-size: 28px;
+    font-weight: bold;
+    /* margin-left: 20px; */
+    /* padding: 10px 10px; */
+}
+
+.main-teacher-photo {
+    width: 400px;
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.photo-container {
+    text-align: center;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    padding: 60px 20px;
+    gap: 40px;
+    align-items: center; 
+    justify-content: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.about-text h3 {
+    font-size: 1.8rem;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.about-section,
+.classes,
+.contact-section {
+    margin-bottom: 40px;
+}
+
+.class-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10px;
+    gap: 20px;
+}
+
+.class-card {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    /* border: 1px solid gray; */
+    border-radius: 10px;
+    /* width: 200px; */
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+}
+
+.class-card:hover {
+    transform: scale(1.01) translateY(-2px);
+}
+
+.class-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.class-card p {
+    margin: 8px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input,
+form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form textarea {
+    height: 10rem;
+}
+
+form button {
+    color: white;
+    background-color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+form button:hover {
+    background-color: darkblue;
+    transform: scale(1.01) ;
+}
+
+.contact-section {
+    text-align: center;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.contact-button:hover {
+    background-color: darkblue;
+    border: 1px solid darkblue;
+    transform: scale(1.03) translateY(-1px);
+}
+
+#form-info {
+    display: none;
+    white-space: pre-line;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width:fit-content;
+}
+
+.form-info-section {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1000px) {
+    body {
+        width: 100%;
+    }
+    .hero {
+        flex-direction: column;
+    }
+
+    .class-cards {
+        /* flex-direction: column;
+        align-items: center; */
+        grid-template-columns: 1fr;
+    }
+
+}
